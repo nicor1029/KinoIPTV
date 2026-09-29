@@ -94,8 +94,11 @@ export async function liveChannels({ categoryId }) {
 
 // 4. Capacidad RESOLVE: Extrae el reproductor
 export async function resolve(ref) {
+  const isFlv = ref.toLowerCase().includes('.flv');
   return {
     url: ref,
+    // Si es flv, le avisamos que es video
+    ...(isFlv ? { format: "flv" } : {}),
     headers: {
       "User-Agent": "VLC/3.0.16 LibVLC/3.0.16"
     }
