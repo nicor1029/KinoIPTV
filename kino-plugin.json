@@ -1,10 +1,10 @@
 {
-  "id": "iptvmio",
-  "name": "Mi TV",
-  "version": "1.1.1",
+  "id": "iptvampi",
+  "name": "VampiTV",
+  "version": "1.1.2",
   "apiVersion": 3,
-  "description": "Canales en vivo: Latino, España, USA y Propios",
-  "author": "ice-dev-x",
+  "description": "Canales en vivo: 24/7, anime, tv local y de películas y series",
+  "author": "VampirinaTeen",
   "icon": "icon.png",
   "entry": "plugin.js",
   "hosts": [
